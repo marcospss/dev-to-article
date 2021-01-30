@@ -13,7 +13,7 @@ module.exports = {
       filename: "static/runtime/remoteEntry.js",
       remotes: {},
       exposes: {
-        './Article': './src/views/Article'
+        './Article': './src/application/views/Article'
       },
       shared: [],
     };
@@ -27,6 +27,11 @@ module.exports = {
       config.output.publicPath = "http://localhost:3011/_next/";
     }
 
+    return config;
+  },
+  webpackDevMiddleware: (config) => {
+    // Perform customizations to webpack dev middleware config
+    // Important: return the modified config
     return config;
   },
 };
