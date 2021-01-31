@@ -13,7 +13,7 @@ module.exports = {
       filename: "static/runtime/remoteEntry.js",
       remotes: {},
       exposes: {
-        './Article': './src/application/views/Article'
+        './Article': './src/pages/[username]'
       },
       shared: [],
     };
