@@ -11,7 +11,7 @@ const IndexPage: NextPage = () => {
       <Link
         href={`/[username]/[slug]`}
         as={`/hack4impact/a-shiny-on-hover-effect-that-follows-your-mouse-css-4d5b`}>
-        <a>Details</a>
+        <a>Details Page</a>
       </Link>
     </>
   );
